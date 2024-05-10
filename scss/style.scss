@@ -32,6 +32,10 @@ body {
         padding: 1.1rem;
     }
 
+    @include mixins.tablet {
+        padding: 1.1rem;
+    }
+
     &-brand /*.header-brand*/{
         color: variables.$primary-color;
         font-size: 3rem;
@@ -43,6 +47,10 @@ body {
             @include mixins.flex-center;
 
             @include mixins.mobile {
+                display: none;
+            }
+
+            @include mixins.tablet {
                 display: none;
             }
 
@@ -73,6 +81,10 @@ body {
                 display: none;
             }
 
+            @include mixins.tablet {
+                display: none;
+            }
+
             li {
                 margin: 0 1rem;
 
@@ -97,6 +109,10 @@ body {
         flex-direction: column;
     }
 
+    @include mixins.tablet {
+        flex-direction: column;
+    }
+
     &-card {
         width: 31%;
         height: 400px;
@@ -106,6 +122,11 @@ body {
         color: variables.$primary-color;
 
         @include mixins.mobile {
+            width: 90%;
+            margin-bottom: 6%;
+        }
+
+        @include mixins.tablet {
             width: 90%;
             margin-bottom: 6%;
         }
