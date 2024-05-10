@@ -9,6 +9,11 @@ body {
   background-color: #000;
   color: #777;
 }
+@media (min-width: 1025px) {
+  body {
+    padding: 0 3%;
+  }
+}
 body a {
   color: #777;
   text-decoration: none;
@@ -32,7 +37,7 @@ body ul {
 }
 @media (min-width: 425px) and (max-width: 1025px) {
   .header {
-    padding: 1.1rem;
+    padding-left: 5%;
   }
 }
 .header-brand {

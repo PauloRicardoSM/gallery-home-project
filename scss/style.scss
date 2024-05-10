@@ -12,6 +12,10 @@ body {
     background-color: variables.$bg-color;
     color: variables.$text-color;
 
+    @include mixins.desktop {
+        padding: 0 3%;
+    }
+
     a {
         color: variables.$text-color;
         text-decoration: none;
@@ -33,7 +37,7 @@ body {
     }
 
     @include mixins.tablet {
-        padding: 1.1rem;
+        padding-left: 5%;
     }
 
     &-brand /*.header-brand*/{
