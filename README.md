@@ -1,2 +1,2 @@
-# gallery-home-project
+# Gallery Homep Project
  First project using SCSS
